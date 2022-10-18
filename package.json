@@ -1,0 +1,17 @@
+{
+  "name": "georgia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cmpl:sass": "node-sass scss -o tailwind -w",
+    "cmpl:tailwind": "tailwindcss -i tailwind/main.css -o css/main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "tailwindcss": "^3.1.8"
+  }
+}

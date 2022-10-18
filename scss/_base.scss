@@ -1,0 +1,14 @@
+
+// Mixins
+@mixin centerChild {
+    @apply flex justify-center items-center;
+}
+
+@mixin centerSelf($top) {
+    @apply absolute left-1/2 -translate-x-1/2;
+    top: $top;
+}
+
+@mixin button {
+   @apply inline-block px-8 py-3 font-josefin font-normal uppercase text-primary border border-primary outline-0 cursor-pointer hover:text-black hover:bg-primary duration-500; 
+}

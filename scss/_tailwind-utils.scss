@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/********************
+* container
+********************/
+
+main {
+	@apply pt-24;
+}
+
+main section {
+	@apply pb-24;
+}
+
+.container {
+	@apply mx-auto p-4;
+}
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1535px;
+	}
+}
+@media (max-width: 1535px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+@media (max-width: 1279px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+@media (max-width: 1023px) {
+	.container {
+		max-width: 768px;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		max-width: 640px;
+	}
+}
+@media (max-width: 639px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+/********************
+* Custom css
+********************/

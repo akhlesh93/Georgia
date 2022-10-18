@@ -1,0 +1,21 @@
+.nav-open .nav-images,
+.nav-open .nav-items {
+    @apply translate-x-0;
+}
+
+
+.nav-images img {
+  @apply w-full max-w-sm mx-auto rounded-md opacity-70;
+}
+
+.nav-link {
+    @apply text-white hover:text-primary font-josefin text-5xl xs:text-4xl font-light tracking-wider hover:tracking-widest capitalize block text-center transition-all duration-300;
+}
+
+.open .icon-open {
+    @apply hidden;
+}
+
+.open .icon-close {
+    @apply block;
+}

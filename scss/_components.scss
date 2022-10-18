@@ -1,0 +1,51 @@
+/***************
+* Brand 
+***************/
+
+.brand {
+    @apply flex items-center space-x-6 sm:space-x-2;
+
+    .logo { 
+        @apply w-28 h-28 sm:w-20 sm:h-20 xs:w-16 xs:h-16 text-7xl sm:text-5xl xs:text-3xl text-primary border-4 border-primary p-4 rounded-full ;
+        @include centerChild;
+    }
+
+    .title {
+        @apply font-nunito font-light uppercase tracking-widest text-5xl sm:text-3xl xs:text-xl text-secondary text-center;
+
+        .sub-name {
+            @apply block text-base xs:text-xs;
+        }
+    }
+}
+
+
+/***************
+* Card 
+***************/
+
+.card {
+    @apply relative overflow-hidden;
+
+    .card-slide {
+        @apply absolute w-full h-full flex-col bg-black/70 text-white 
+        -translate-x-full transition-transform duration-500 space-y-4 xs:space-y-2;
+        @include centerChild;
+
+        .card-title {
+            @apply text-3xl xs:text-xl;
+        }
+
+        .card-price {
+            @apply text-xl;
+        }
+
+        .btn {
+            @apply px-3 py-2 xs:text-sm;
+        }
+    }
+
+    &:hover .card-slide {
+        @apply translate-x-0;
+    }
+}

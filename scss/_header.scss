@@ -1,0 +1,12 @@
+.header {
+    @include centerChild;
+}
+
+.header .brand {
+    @include centerSelf(5%);
+    @apply xs:static xs:transform-none;
+}
+
+.btn {
+    @include button;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js" defer></script>
+    <title>Georgia | Tailwind & Sass Project</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="">
+        <div class="wrapper">
+            <div
+                class="nav-images flex flex-col justify-center space-y-6 fixed z-10 w-1/2 h-screen bg-dark px-12 sm:hidden -translate-x-full transition-transform duration-1000">
+                <img src="images/nav-img-1.jpeg" class="relative -left-[10%]">
+                <img src="images/nav-img-2.jpeg">
+                <img src="images/nav-img-3.jpeg" class="relative left-[10%]">
+            </div>
+            <div
+                class="nav-items fixed right-0 z-10 w-1/2 sm:w-full h-screen bg-black flex items-center translate-x-full transition-transform duration-1000">
+                <ul class="w-full space-y-12">
+                    <li>
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Reservation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header relative h-screen bg-hero bg-center bg-no-repeat bg-cover bg-black/50 bg-blend-overlay">
+        <div class="xs:absolute top-10 left-5 right-5 flex justify-between items-center">
+            <!-- Brand -->
+            <div class="brand">
+                <a href="#" class="logo">
+                    <i class="fas fa-utensils"></i>
+                </a>
+                <h1 class="title">
+                    <span class="name">Georgia</span>
+                    <span class="sub-name">Restaurant</span>
+                </h1>
+            </div>
+            <!-- Humburger -->
+            <div id="hamburger"
+                class="w-10 fixed xs:static z-10 right-10 xs:right-6 top-20 xs:top-16 text-4xl xs:text-3xl text-primary cursor-pointer text-center">
+                <i class="fa fa-bars pointer-events-none icon-open"></i>
+                <i class="fa fa-times pointer-events-none icon-close hidden"></i>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div class="banner w-full">
+            <div class="container">
+                <div class="w-full max-w-2xl mx-auto text-center font-light space-y-12 sm:space-y-8">
+                    <h2 class="text-8xl sm:text-7xl font-dancing text-primary">Welcome</h2>
+                    <h3 class="text-5xl sm:text-4xl font-josefin text-secondary">Try Great Georgian Dishes</h3>
+                    <a href="#" class="btn">Reservation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Us -->
+        <section id="about-us">
+            <div class="container">
+                <div class="flex items-center space-x-6 md:flex-col md:space-x-0 md:space-y-24">
+                    <div class="w-1/2 md:w-full">
+                        <img src="images/about-us-img.png">
+                    </div>
+                    <div class="w-1/2 md:w-full space-y-6 md:text-center">
+                        <h2 class="font-josefin font-bold text-4xl">About Us</h2>
+                        <h3 class="font-josefin text-3xl">Introduce To Georgian Dishes</h3>
+                        <p class="font-josefin text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Molestiae
+                            commodi placeat nihil
+                            animi, id dicta, rem recusandae ex earum cupiditate unde eius aliquid dolore voluptatibus
+                            delectus hic inventore similique dolores. Veritatis sit dicta et impedit repellendus quo
+                            aspernatur, eum vitae quia quos vero natus totam, sint nisi doloribus, quibusdam reiciendis?
+                        </p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section id="gallery">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="cards grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Veg Roll</h1>
+                                <p class="card-price">Price: $10.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-1.jpeg" class="card-img">
+                        </div>
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Food Name</h1>
+                                <p class="card-price">Price: $20.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-2.jpeg" class="card-img">
+                        </div>
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Pizza</h1>
+                                <p class="card-price">Price: $30.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-3.jpeg" class="card-img">
+                        </div>
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Food Name</h1>
+                                <p class="card-price">Price: $40.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-4.jpeg" class="card-img">
+                        </div>
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Food Name</h1>
+                                <p class="card-price">Price: $50.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-5.jpeg" class="card-img">
+                        </div>
+                        <div class="card">
+                            <div class="card-slide">
+                                <h1 class="card-title">Food Name</h1>
+                                <p class="card-price">Price: $60.00</p>
+                                <button type="button" class="btn">Order Now</button>
+                            </div>
+                            <img src="images/gallery-img-6.jpeg" class="card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark py-8">
+        <div class="container">
+            <div class="flex flex-col items-center space-y-12">
+                <!-- Brand -->
+                <div class="brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-utensils"></i>
+                    </a>
+                    <h1 class="title">
+                        <span class="name">Georgia</span>
+                        <span class="sub-name">Restaurant</span>
+                    </h1>
+                </div>
+                <!-- Social Icons -->
+                <ul class="flex space-x-12 sm:space-x-8">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <!-- Copyright -->
+                <p class="text-secondary text-xl sm:text-lg font-josefin text-center">
+                    © Copyright @ Georgia. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

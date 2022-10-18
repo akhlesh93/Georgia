@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/********************
+* container
+********************/
+main {
+  @apply pt-24; }
+
+main section {
+  @apply pb-24; }
+
+.container {
+  @apply mx-auto p-4; }
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1535px; } }
+
+@media (max-width: 1535px) {
+  .container {
+    max-width: 1280px; } }
+
+@media (max-width: 1279px) {
+  .container {
+    max-width: 1024px; } }
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 768px; } }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 640px; } }
+
+@media (max-width: 639px) {
+  .container {
+    max-width: 100%; } }
+
+/********************
+* Custom css
+********************/
+/***************
+* Brand 
+***************/
+.brand {
+  @apply flex items-center space-x-6 sm:space-x-2; }
+  .brand .logo {
+    @apply w-28 h-28 sm:w-20 sm:h-20 xs:w-16 xs:h-16 text-7xl sm:text-5xl xs:text-3xl text-primary border-4 border-primary p-4 rounded-full;
+    @apply flex justify-center items-center; }
+  .brand .title {
+    @apply font-nunito font-light uppercase tracking-widest text-5xl sm:text-3xl xs:text-xl text-secondary text-center; }
+    .brand .title .sub-name {
+      @apply block text-base xs:text-xs; }
+
+/***************
+* Card 
+***************/
+.card {
+  @apply relative overflow-hidden; }
+  .card .card-slide {
+    @apply absolute w-full h-full flex-col bg-black/70 text-white 
+        -translate-x-full transition-transform duration-500 space-y-4 xs:space-y-2;
+    @apply flex justify-center items-center; }
+    .card .card-slide .card-title {
+      @apply text-3xl xs:text-xl; }
+    .card .card-slide .card-price {
+      @apply text-xl; }
+    .card .card-slide .btn {
+      @apply px-3 py-2 xs:text-sm; }
+  .card:hover .card-slide {
+    @apply translate-x-0; }
+
+.header {
+  @apply flex justify-center items-center; }
+
+.header .brand {
+  @apply absolute left-1/2 -translate-x-1/2;
+  top: 5%;
+  @apply xs:static xs:transform-none; }
+
+.btn {
+  @apply inline-block px-8 py-3 font-josefin font-normal uppercase text-primary border border-primary outline-0 cursor-pointer hover:text-black hover:bg-primary duration-500; }
+
+.social-link {
+  @apply text-5xl sm:text-4xl text-secondary hover:text-primary duration-500; }
+
+.nav-open .nav-images,
+.nav-open .nav-items {
+  @apply translate-x-0; }
+
+.nav-images img {
+  @apply w-full max-w-sm mx-auto rounded-md opacity-70; }
+
+.nav-link {
+  @apply text-white hover:text-primary font-josefin text-5xl xs:text-4xl font-light tracking-wider hover:tracking-widest capitalize block text-center transition-all duration-300; }
+
+.open .icon-open {
+  @apply hidden; }
+
+.open .icon-close {
+  @apply block; }
